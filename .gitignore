@@ -1,0 +1,6 @@
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+TempContent/*
+Pods/*
+.DS_Store
