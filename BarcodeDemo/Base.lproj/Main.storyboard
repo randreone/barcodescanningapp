@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,35 +20,62 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLe-W0-Pbu">
-                                <rect key="frame" x="72" y="50" width="456" height="193"/>
+                                <rect key="frame" x="72" y="72" width="456" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdx-Ch-Gv2">
+                                        <rect key="frame" x="8" y="8" width="440" height="304"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJW-wk-pcS" customClass="BarcodeScannerOverlayView">
+                                                <rect key="frame" x="0.0" y="0.0" width="440" height="304"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="rJW-wk-pcS" secondAttribute="bottom" id="Gv0-OT-oMh"/>
+                                            <constraint firstItem="rJW-wk-pcS" firstAttribute="leading" secondItem="zdx-Ch-Gv2" secondAttribute="leading" id="arV-lP-Zqt"/>
+                                            <constraint firstItem="rJW-wk-pcS" firstAttribute="top" secondItem="zdx-Ch-Gv2" secondAttribute="top" id="cc3-it-75x"/>
+                                            <constraint firstAttribute="trailing" secondItem="rJW-wk-pcS" secondAttribute="trailing" id="uuj-R4-aNa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFe-62-DIk" customClass="BarcodeScannerOverlayView">
+                                        <rect key="frame" x="0.0" y="8" width="448" height="304"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="0.86986595389999999" green="0.12574699519999999" blue="0.15191602709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="456" id="eNF-IC-Z6f"/>
-                                    <constraint firstAttribute="height" constant="193" id="wg2-qR-yVh"/>
+                                    <constraint firstItem="FFe-62-DIk" firstAttribute="bottom" secondItem="zdx-Ch-Gv2" secondAttribute="bottom" id="062-9f-Olj"/>
+                                    <constraint firstItem="FFe-62-DIk" firstAttribute="top" secondItem="zdx-Ch-Gv2" secondAttribute="top" id="EC6-0A-Q8z"/>
+                                    <constraint firstItem="FFe-62-DIk" firstAttribute="trailing" secondItem="zdx-Ch-Gv2" secondAttribute="trailing" id="H2J-X9-tVK"/>
+                                    <constraint firstItem="FFe-62-DIk" firstAttribute="leading" secondItem="zdx-Ch-Gv2" secondAttribute="leading" constant="-8" id="KbU-Az-Faz"/>
+                                    <constraint firstItem="zdx-Ch-Gv2" firstAttribute="leading" secondItem="HLe-W0-Pbu" secondAttribute="leading" constant="8" id="YJd-Rw-IY6"/>
+                                    <constraint firstAttribute="height" constant="320" id="ZDr-Qv-j78"/>
+                                    <constraint firstItem="zdx-Ch-Gv2" firstAttribute="top" secondItem="HLe-W0-Pbu" secondAttribute="top" constant="8" id="gRn-WZ-kdn"/>
+                                    <constraint firstAttribute="trailing" secondItem="zdx-Ch-Gv2" secondAttribute="trailing" constant="8" id="lJb-tH-p32"/>
+                                    <constraint firstAttribute="bottom" secondItem="zdx-Ch-Gv2" secondAttribute="bottom" constant="8" id="zgY-QT-Xkh"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdx-Ch-Gv2">
-                                <rect key="frame" x="80" y="58" width="440" height="177"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wml-Jp-nca">
+                                <rect key="frame" x="210" y="392" width="180" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="ioI-qJ-5BR"/>
-                                    <constraint firstAttribute="width" constant="440" id="tea-xI-bjT"/>
+                                    <constraint firstAttribute="width" constant="180" id="2ui-kR-4tc"/>
+                                    <constraint firstAttribute="height" constant="31" id="4Ge-aV-6rq"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJW-wk-pcS" customClass="BarcodeScannerOverlayView">
-                                <rect key="frame" x="80" y="58" width="440" height="177"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="ICC-x2-0ol"/>
-                                    <constraint firstAttribute="width" constant="440" id="Mi4-Md-UGE"/>
-                                </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FmP-yP-xvB">
+                                <rect key="frame" x="290" y="463" width="20" height="20"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSU-om-XoZ">
-                                <rect key="frame" x="258" y="280" width="84" height="30"/>
+                                <rect key="frame" x="221" y="421" width="158" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9QT-FD-P1w"/>
-                                    <constraint firstAttribute="width" constant="84" id="o3M-Gn-3v1"/>
+                                    <constraint firstAttribute="height" constant="42" id="9QT-FD-P1w"/>
+                                    <constraint firstAttribute="width" constant="158" id="o3M-Gn-3v1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Start Scan">
                                     <color key="titleColor" red="0.86986595389999999" green="0.12574699519999999" blue="0.15191602709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -54,35 +83,35 @@
                                     <action selector="startScanPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hQ-AP-EaE"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wml-Jp-nca">
-                                <rect key="frame" x="210" y="251" width="180" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FF-Logo-No-Tagline-2014-For-Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="lM1-a6-Ipc">
+                                <rect key="frame" x="180" y="472" width="240" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="2ui-kR-4tc"/>
-                                    <constraint firstAttribute="height" constant="21" id="4Ge-aV-6rq"/>
+                                    <constraint firstAttribute="width" constant="240" id="78N-dR-3mB"/>
+                                    <constraint firstAttribute="height" constant="128" id="inb-aB-oSP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FmP-yP-xvB">
-                                <rect key="frame" x="290" y="315" width="20" height="20"/>
-                            </activityIndicatorView>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="zdx-Ch-Gv2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="6ut-Dq-xro"/>
-                            <constraint firstItem="FmP-yP-xvB" firstAttribute="top" secondItem="MSU-om-XoZ" secondAttribute="bottom" constant="5" id="Dvr-hS-9Vh"/>
-                            <constraint firstItem="wml-Jp-nca" firstAttribute="top" secondItem="zdx-Ch-Gv2" secondAttribute="bottom" constant="16" id="ILe-o7-LkJ"/>
-                            <constraint firstItem="rJW-wk-pcS" firstAttribute="centerY" secondItem="zdx-Ch-Gv2" secondAttribute="centerY" id="J7t-SS-l19"/>
-                            <constraint firstItem="rJW-wk-pcS" firstAttribute="centerX" secondItem="zdx-Ch-Gv2" secondAttribute="centerX" id="XQ9-je-NQ1"/>
+                            <constraint firstItem="FmP-yP-xvB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0FN-qr-XTN"/>
+                            <constraint firstItem="FmP-yP-xvB" firstAttribute="top" secondItem="MSU-om-XoZ" secondAttribute="bottom" id="0wK-k0-wsv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HLe-W0-Pbu" secondAttribute="trailing" constant="52" id="3fK-mT-Cje"/>
+                            <constraint firstItem="HLe-W0-Pbu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52" id="AM0-dd-Rgh"/>
+                            <constraint firstItem="MSU-om-XoZ" firstAttribute="top" secondItem="wml-Jp-nca" secondAttribute="bottom" constant="-2" id="R7e-0a-b6g"/>
                             <constraint firstItem="wml-Jp-nca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8v-Pn-Mpj"/>
-                            <constraint firstItem="FmP-yP-xvB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gqn-9d-2VB"/>
-                            <constraint firstItem="HLe-W0-Pbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lEG-tx-OV9"/>
-                            <constraint firstItem="HLe-W0-Pbu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="nwW-IQ-8UE"/>
-                            <constraint firstItem="zdx-Ch-Gv2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tX4-ic-ZHp"/>
+                            <constraint firstItem="HLe-W0-Pbu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="bIe-Fw-O5f"/>
+                            <constraint firstItem="wml-Jp-nca" firstAttribute="top" secondItem="HLe-W0-Pbu" secondAttribute="bottom" id="gao-Of-VLb"/>
+                            <constraint firstItem="HLe-W0-Pbu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="19:25" id="krm-AR-l2B"/>
+                            <constraint firstItem="lM1-a6-Ipc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lj1-cS-KIq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lM1-a6-Ipc" secondAttribute="bottom" id="sNN-M3-I8Z"/>
                             <constraint firstItem="MSU-om-XoZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vJ2-6V-xxG"/>
-                            <constraint firstItem="MSU-om-XoZ" firstAttribute="top" secondItem="wml-Jp-nca" secondAttribute="bottom" constant="8" id="xWj-dd-aWr"/>
+                            <constraint firstItem="MSU-om-XoZ" firstAttribute="top" secondItem="wml-Jp-nca" secondAttribute="bottom" constant="-2" id="xWj-dd-aWr"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="krm-AR-l2B"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="FmP-yP-xvB" id="tht-0a-DRT"/>
@@ -97,4 +126,7 @@
             <point key="canvasLocation" x="340" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FF-Logo-No-Tagline-2014-For-Screen.png" width="16" height="16"/>
+    </resources>
 </document>
