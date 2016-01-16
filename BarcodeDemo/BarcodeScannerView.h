@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BarcodeScannerView : UIView
+@interface BarcodeScannerOverlayView : UIView
 
 @property (strong, nonatomic) NSArray *drawCorners;
 
