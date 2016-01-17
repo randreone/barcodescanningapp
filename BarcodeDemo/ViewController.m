@@ -10,7 +10,8 @@
 #import "BarcodeScannerView.h"
 #import <MTBBarcodeScanner.h>
 
-#define kDefaultURL @"https://www.amazon.com"
+#define kDefaultURL @"https://www.formfast.com"
+#define kLaunchURLKey @"launchURL"
 #define kScanDelay 1.5
 
 @interface ViewController () {
@@ -29,6 +30,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *resultLabel;
 @property (strong, nonatomic) IBOutlet UIButton *startScanButton;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) IBOutlet UIImageView *logoImageView;
 
 @end
 
@@ -44,7 +46,14 @@
     self.view.frame = [[UIScreen mainScreen] bounds];
     [self.view setNeedsLayout];
     
-    _launchURL = kDefaultURL;
+    _launchURL = [[NSUserDefaults standardUserDefaults] objectForKey:kLaunchURLKey];
+    if (_launchURL == nil) {
+        _launchURL = kDefaultURL;
+    }
+    
+    _logoImageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(logoTapped:)];
+    [_logoImageView addGestureRecognizer:tapGesture];
     
 }
 
@@ -103,6 +112,28 @@
         //TODO: process URL with code
         [[UIApplication sharedApplication] openURL:url];
     }
+}
+                                          
+- (void)logoTapped:(UIGestureRecognizer *)gesture {
+  
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Change the target URL"
+                                                                   message:@"This is an alert."
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction =
+    [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction * action) {
+                                       
+                                           _launchURL = alert.textFields[0].text;
+                                           [[NSUserDefaults standardUserDefaults] setObject:_launchURL forKey:kLaunchURLKey];
+                                                          
+                                       }];
+    [alert addAction:defaultAction];
+    
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.text = _launchURL;
+    }];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 

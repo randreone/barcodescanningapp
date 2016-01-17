@@ -43,7 +43,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.86986595389999999" green="0.12574699519999999" blue="0.15191602709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.039215686274509803" green="0.33333333333333331" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="FFe-62-DIk" firstAttribute="bottom" secondItem="zdx-Ch-Gv2" secondAttribute="bottom" id="062-9f-Olj"/>
                                     <constraint firstItem="FFe-62-DIk" firstAttribute="top" secondItem="zdx-Ch-Gv2" secondAttribute="top" id="EC6-0A-Q8z"/>
@@ -77,17 +77,17 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Start Scan">
-                                    <color key="titleColor" red="0.86986595389999999" green="0.12574699519999999" blue="0.15191602709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.039215686274509803" green="0.33333333333333331" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="startScanPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hQ-AP-EaE"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FF-Logo-No-Tagline-2014-For-Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="lM1-a6-Ipc">
-                                <rect key="frame" x="180" y="472" width="240" height="128"/>
+                                <rect key="frame" x="121" y="421" width="358" height="179"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="78N-dR-3mB"/>
-                                    <constraint firstAttribute="height" constant="128" id="inb-aB-oSP"/>
+                                    <constraint firstAttribute="width" constant="358" id="78N-dR-3mB"/>
+                                    <constraint firstAttribute="height" constant="179" id="inb-aB-oSP"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -117,6 +117,7 @@
                         <outlet property="activityIndicator" destination="FmP-yP-xvB" id="tht-0a-DRT"/>
                         <outlet property="barcodeOverlayView" destination="rJW-wk-pcS" id="sqe-R2-dhb"/>
                         <outlet property="barcodeView" destination="zdx-Ch-Gv2" id="La0-9n-zkJ"/>
+                        <outlet property="logoImageView" destination="lM1-a6-Ipc" id="G1c-OD-8Zr"/>
                         <outlet property="resultLabel" destination="wml-Jp-nca" id="Z14-7R-hAP"/>
                         <outlet property="startScanButton" destination="MSU-om-XoZ" id="kTE-0T-QkO"/>
                     </connections>
@@ -127,6 +128,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FF-Logo-No-Tagline-2014-For-Screen.png" width="16" height="16"/>
+        <image name="FF-Logo-No-Tagline-2014-For-Screen.png" width="500" height="221"/>
     </resources>
 </document>
