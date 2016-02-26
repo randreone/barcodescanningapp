@@ -145,6 +145,7 @@
 				TargetAttributes = {
 					8532DECF1C4988CB004FBF7D = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S5NQYRTYX2;
 					};
 				};
 			};
@@ -349,11 +350,13 @@
 			baseConfigurationReference = AC7FA0BADDBADBEB1B2123E9 /* Pods-BarcodeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Thomas Holt (BYQAHYCC8S)";
 				INFOPLIST_FILE = BarcodeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FormFast.BarcodeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.formfast.barcodereader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -362,11 +365,13 @@
 			baseConfigurationReference = E508E7B47EDAA8978E4F4119 /* Pods-BarcodeDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: FORMFAST, INC (S5NQYRTYX2)";
 				INFOPLIST_FILE = BarcodeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FormFast.BarcodeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.formfast.barcodereader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

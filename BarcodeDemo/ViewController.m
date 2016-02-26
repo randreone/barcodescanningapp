@@ -10,7 +10,7 @@
 #import "BarcodeScannerView.h"
 #import <MTBBarcodeScanner.h>
 
-#define kDefaultURL @"https://www.formfast.com"
+#define kDefaultURL @"http://ffdemo.formfast.com/WebFormImprint/WebAnnotationClient/index.htm?ffservice=http://ffdemo.formfast.com/WebFormImprint/FFWebService&filter_PersonId=236405&filter_RecordId=01909978&user=nurse&psw=nurse&DisplayPrintButton=False&ShowClearAndDeleteButtonsInMobile=True"
 #define kLaunchURLKey @"launchURL"
 #define kScanDelay 1.5
 
@@ -72,14 +72,17 @@
     
     [MTBBarcodeScanner requestCameraPermissionWithSuccess:^(BOOL success) {
         if (success) {
-            _startScanButton.enabled = NO;
+            _startScanButton.hidden = YES;
             [_scanner unfreezeCapture];
             _resultLabel.text = @"";
             [_scanner startScanningWithResultBlock:^(NSArray *codes) {
                 AVMetadataMachineReadableCodeObject *code = [codes firstObject];
                 NSLog(@"Found code: %@", code.stringValue);
+
+                NSString *recordID = code.stringValue;
+                _resultLabel.text = recordID;
                 
-                _resultLabel.text = code.stringValue;
+
                 _barcodeOverlayView.drawCorners = code.corners;
                 [_barcodeOverlayView setNeedsDisplay];
                 
@@ -88,28 +91,30 @@
                 _activityIndicator.hidden = NO;
                 [_activityIndicator startAnimating];
                 
-                _timer = [NSTimer scheduledTimerWithTimeInterval:kScanDelay target:self selector:@selector(timerComplete:) userInfo:code.stringValue repeats:NO];
+
+                _timer = [NSTimer scheduledTimerWithTimeInterval:kScanDelay target:self selector:@selector(timerComplete:) userInfo:recordID repeats:NO];
+
                 
             }];
             
         } else {
             // The user denied access to the camera
-            _startScanButton.enabled = YES;
+            _startScanButton.hidden = NO;
         }
     }];
     
 }
 
-- (void)timerComplete:(NSString *)code {
+- (void)timerComplete:(NSTimer *)timer {
     
     _timer = nil;
-    _startScanButton.enabled = YES;
+    _startScanButton.hidden = NO;
     [_activityIndicator stopAnimating];
     _activityIndicator.hidden = YES;
     
-    NSURL *url = [NSURL URLWithString:_launchURL];
+    NSString *urlString = [NSString stringWithFormat:_launchURL, timer.userInfo];
+    NSURL *url = [NSURL URLWithString:urlString];
     if (url) {
-        //TODO: process URL with code
         [[UIApplication sharedApplication] openURL:url];
     }
 }
