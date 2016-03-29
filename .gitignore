@@ -2,5 +2,4 @@
 *.xcodeproj/xcuserdata/
 *.xcworkspace/xcuserdata/
 TempContent/*
-Pods/*
 .DS_Store

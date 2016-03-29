@@ -64,6 +64,15 @@
     _timer = nil;
 }
 
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+    [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        [_scanner updateCaptureLayerFrame:_barcodeView.bounds];
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        [_scanner refreshVideoOrientation:[UIApplication sharedApplication].statusBarOrientation];
+    }];
+}
+
 - (void)startScanning {
     
     _barcodeOverlayView.drawCorners = nil;
