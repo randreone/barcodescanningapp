@@ -10,8 +10,8 @@
 #import "BarcodeScannerView.h"
 #import <MTBBarcodeScanner.h>
 
-#define kDefaultURL @"http://ffdemo.formfast.com/WebFormImprint/WebAnnotationClient/index.htm?ffservice=http://ffdemo.formfast.com/WebFormImprint/FFWebService&filter_PersonId=236405&filter_RecordId=01909978&user=nurse&psw=nurse&DisplayPrintButton=False&ShowClearAndDeleteButtonsInMobile=True"
-#define kLaunchURLKey @"launchURL"
+//#define kDefaultURL @"http://ffdemo.formfast.com/WebFormImprint/WebAnnotationClient/index.htm?ffservice=http://ffdemo.formfast.com/WebFormImprint/FFWebService&filter_PersonId=236405&filter_RecordId=01909978&user=nurse&psw=nurse&DisplayPrintButton=False&ShowClearAndDeleteButtonsInMobile=True"
+#define kLaunchURLKey @"scan_url"
 #define kScanDelay 1.5
 
 @interface ViewController () {
@@ -46,14 +46,13 @@
     self.view.frame = [[UIScreen mainScreen] bounds];
     [self.view setNeedsLayout];
     
+    [self registerDefaultsFromSettingsBundle];
     _launchURL = [[NSUserDefaults standardUserDefaults] objectForKey:kLaunchURLKey];
-    if (_launchURL == nil) {
-        _launchURL = kDefaultURL;
-    }
-    
-    _logoImageView.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(logoTapped:)];
-    [_logoImageView addGestureRecognizer:tapGesture];
+
+//    
+//    _logoImageView.userInteractionEnabled = YES;
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(logoTapped:)];
+//    [_logoImageView addGestureRecognizer:tapGesture];
     
 }
 
@@ -62,6 +61,30 @@
     [self startScanning];
     _activityIndicator.hidden = YES;
     _timer = nil;
+}
+
+- (void)registerDefaultsFromSettingsBundle {
+    // this function writes default settings as settings
+    NSString *settingsBundle = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"bundle"];
+    if(!settingsBundle) {
+        NSLog(@"Could not find Settings.bundle");
+        return;
+    }
+    
+    NSDictionary *settings = [NSDictionary dictionaryWithContentsOfFile:[settingsBundle stringByAppendingPathComponent:@"Root.plist"]];
+    NSArray *preferences = [settings objectForKey:@"PreferenceSpecifiers"];
+    
+    NSMutableDictionary *defaultsToRegister = [[NSMutableDictionary alloc] initWithCapacity:[preferences count]];
+    for(NSDictionary *prefSpecification in preferences) {
+        NSString *key = [prefSpecification objectForKey:@"Key"];
+        if(key) {
+            [defaultsToRegister setObject:[prefSpecification objectForKey:@"DefaultValue"] forKey:key];
+            NSLog(@"writing as default %@ to the key %@",[prefSpecification objectForKey:@"DefaultValue"],key);
+        }
+    }
+    
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultsToRegister];
+    
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {

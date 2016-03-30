@@ -16,6 +16,9 @@
 		8532DEE31C4988CB004FBF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8532DEE11C4988CB004FBF7D /* LaunchScreen.storyboard */; };
 		8532DEEF1C49992D004FBF7D /* BarcodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8532DEEE1C49992D004FBF7D /* BarcodeScannerView.m */; };
 		8532DF1B1C4AF6D9004FBF7D /* FF-Logo-No-Tagline-2014-For-Screen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8532DF1A1C4AF6D9004FBF7D /* FF-Logo-No-Tagline-2014-For-Screen@2x.png */; };
+		8573D8A81CAA1E28004A9919 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8573D8A71CAA1E28004A9919 /* Settings.bundle */; };
+		8573D8B41CAC2CAB004A9919 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573D8B21CAC2CAB004A9919 /* Fabric.framework */; };
+		8573D8B51CAC2CAB004A9919 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8573D8B31CAC2CAB004A9919 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		8532DEED1C49992D004FBF7D /* BarcodeScannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarcodeScannerView.h; sourceTree = "<group>"; };
 		8532DEEE1C49992D004FBF7D /* BarcodeScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarcodeScannerView.m; sourceTree = "<group>"; };
 		8532DF1A1C4AF6D9004FBF7D /* FF-Logo-No-Tagline-2014-For-Screen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FF-Logo-No-Tagline-2014-For-Screen@2x.png"; sourceTree = "<group>"; };
+		8573D8A71CAA1E28004A9919 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		8573D8B21CAC2CAB004A9919 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		8573D8B31CAC2CAB004A9919 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		AC7FA0BADDBADBEB1B2123E9 /* Pods-BarcodeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BarcodeDemo/Pods-BarcodeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E508E7B47EDAA8978E4F4119 /* Pods-BarcodeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BarcodeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BarcodeDemo/Pods-BarcodeDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +49,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				54EE6C35E1D821A423960092 /* libPods-BarcodeDemo.a in Frameworks */,
+				8573D8B51CAC2CAB004A9919 /* Crashlytics.framework in Frameworks */,
+				8573D8B41CAC2CAB004A9919 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +60,8 @@
 		02280826C49DAE21A1CA7927 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8573D8B21CAC2CAB004A9919 /* Fabric.framework */,
+				8573D8B31CAC2CAB004A9919 /* Crashlytics.framework */,
 				2D85089846F30A141929DB45 /* libPods-BarcodeDemo.a */,
 			);
 			name = Frameworks;
@@ -80,6 +90,7 @@
 			children = (
 				8532DF1A1C4AF6D9004FBF7D /* FF-Logo-No-Tagline-2014-For-Screen@2x.png */,
 				8532DED61C4988CB004FBF7D /* AppDelegate.h */,
+				8573D8A71CAA1E28004A9919 /* Settings.bundle */,
 				8532DED71C4988CB004FBF7D /* AppDelegate.m */,
 				8532DED91C4988CB004FBF7D /* ViewController.h */,
 				8532DEDA1C4988CB004FBF7D /* ViewController.m */,
@@ -124,6 +135,7 @@
 				8532DECE1C4988CB004FBF7D /* Resources */,
 				3BDCBBAC97C3904A60614AFE /* Embed Pods Frameworks */,
 				BDE9CB52D251150E188CBB6E /* Copy Pods Resources */,
+				8573D8B11CAC2C7D004A9919 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,7 +157,7 @@
 				TargetAttributes = {
 					8532DECF1C4988CB004FBF7D = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = WYPS277PQE;
+						DevelopmentTeam = S5NQYRTYX2;
 					};
 				};
 			};
@@ -174,6 +186,7 @@
 			files = (
 				8532DF1B1C4AF6D9004FBF7D /* FF-Logo-No-Tagline-2014-For-Screen@2x.png in Resources */,
 				8532DEE31C4988CB004FBF7D /* LaunchScreen.storyboard in Resources */,
+				8573D8A81CAA1E28004A9919 /* Settings.bundle in Resources */,
 				8532DEE01C4988CB004FBF7D /* Assets.xcassets in Resources */,
 				8532DEDE1C4988CB004FBF7D /* Main.storyboard in Resources */,
 			);
@@ -196,6 +209,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BarcodeDemo/Pods-BarcodeDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8573D8B11CAC2C7D004A9919 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 3e650c374ae85f77c10afe9166fa92b6d8fc6341 56db1fa2ad6126deff5eac61cbf6f7a16c1fe627725bb082f5a21dd5972064f4";
 		};
 		BDE9CB52D251150E188CBB6E /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -351,6 +377,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BarcodeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -366,6 +397,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BarcodeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
