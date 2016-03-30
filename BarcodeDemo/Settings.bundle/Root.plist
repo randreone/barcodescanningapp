@@ -14,7 +14,7 @@
 			<key>Key</key>
 			<string>scan_url</string>
 			<key>DefaultValue</key>
-			<string>https://www.intel.com</string>
+			<string>http://ffdemo.formfast.com/WebFormImprint/WebAnnotationClient/index.htm?ffservice=http://ffdemo.formfast.com/WebFormImprint/FFWebService&amp;filter_PersonId=236405&amp;filter_RecordId=01909978&amp;user=nurse&amp;psw=nurse&amp;DisplayPrintButton=False&amp;ShowClearAndDeleteButtonsInMobile=True</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>KeyboardType</key>
