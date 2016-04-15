@@ -13,7 +13,7 @@
 		<key>0013A3698F40282892CC57672158F322</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1BF0AE058CB5233F805D435B73C85C33</string>
+			<string>D2232C0AA0DB657F6420E029A9AC5E86</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -24,18 +24,54 @@
 				</array>
 			</dict>
 		</dict>
-		<key>02C2DC918D2EB99B64EAB849E4B1E533</key>
+		<key>011E7FCA4384D62245028183136B63B4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SVIndefiniteAnimatedView.h</string>
 			<key>path</key>
-			<string>MTBBarcodeScanner.xcconfig</string>
+			<string>SVProgressHUD/SVIndefiniteAnimatedView.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0C0299FFAD17D0562A513EA711213D22</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2BDDD4243DE0CDA9E7024462D9982802</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
 		</dict>
 		<key>0F428DDC8E0376A27783EBA3564B2973</key>
 		<dict>
@@ -52,12 +88,19 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>0F6297B05692A16A70987B1F6548554D</key>
+		<key>121AAFBFAEB98249680F97A7719AE947</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7B2920A13F19BF04ADA438205278D32F</string>
+			<string>6060F300C2797A42C7587C44828C2A86</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>122DA2E5084A4393C29BE363C764795C</key>
 		<dict>
@@ -72,6 +115,73 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>1342B94457F64FADB9A2C5F0E6CAD7A3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.plug-in</string>
+			<key>name</key>
+			<string>SVProgressHUD.bundle</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVProgressHUD.bundle</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>169119F62BEA7C48A576A7E8F2EB00EC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SVProgressHUD-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>189988999415D8637E325C6C250EED3B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>84E4468846D739AF1C998F53DA7622CD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>18FA9D4A6147C06CA9C1D92157CC22B4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>34C5FD4CDCECAB16010FBF785EBBF288</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>19CC021FE4F578FC2623944FE2D7CB89</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -85,44 +195,67 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1BF0AE058CB5233F805D435B73C85C33</key>
+		<key>19D4B573DD515D251F3E4773DCE35E63</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>D2232C0AA0DB657F6420E029A9AC5E86</string>
+				<string>954CAE6DA794C4B5B2DBA01314346732</string>
+				<string>F97017F557D6F7CA746D0CC352FE0D5E</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>MTBBarcodeScanner.h</string>
+			<string>MTBBarcodeScanner</string>
 			<key>path</key>
-			<string>Classes/ios/Scanners/MTBBarcodeScanner.h</string>
+			<string>MTBBarcodeScanner</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1F8588E6BE33C3552407DE94DAEDD0A0</key>
+		<key>1C0A8ACB0F0AF54B49BD0FB59FC88A08</key>
 		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0C0299FFAD17D0562A513EA711213D22</string>
+				<string>EC728BB2D9BE5157F758EECF76B6A6FC</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>MTBBarcodeScanner</string>
-			<key>target</key>
-			<string>ED20C28FE5CB0C4E3BC2174894B2EB74</string>
-			<key>targetProxy</key>
-			<string>295FC5609B4D6302F4B56B18F618B3E8</string>
+			<string>XCConfigurationList</string>
 		</dict>
-		<key>295FC5609B4D6302F4B56B18F618B3E8</key>
+		<key>1F4D4A2E1BC7836B10F43C828BB5060F</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>fileRef</key>
+			<string>011E7FCA4384D62245028183136B63B4</string>
 			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>ED20C28FE5CB0C4E3BC2174894B2EB74</string>
-			<key>remoteInfo</key>
-			<string>MTBBarcodeScanner</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>2B12F1531EF8FDEEF76A84A478AC43E2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>A40C16FFE28AB22AB4190AA1B534E889</string>
+				<string>E89BDA02267D41A31CA3133D6636FA6A</string>
+				<string>AD58A6DDE690DDA11FF0C14AD3E690DC</string>
+				<string>189988999415D8637E325C6C250EED3B</string>
+				<string>C5D36AB3B31495DE503FAC59CAF0A219</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
 		</dict>
 		<key>2B6083B65BFDBCAAFB804429A2A1D576</key>
 		<dict>
@@ -134,6 +267,19 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Pods-BarcodeDemo-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2BDDD4243DE0CDA9E7024462D9982802</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SVProgressHUD.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -151,6 +297,32 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>2EAD14EF2017FF50C094BD6A3EF2417F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7C70E9F62E06B75CC51821D3A1D56331</string>
+				<string>D08F647D5D7B0E406D8DE4F502FCD2CA</string>
+				<string>45140123C2E9429DF1048E7B309A1DD7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F62E15B77C5225DD905104AF5D908DD</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SVProgressHUD</string>
+			<key>target</key>
+			<string>76E26986DB6C6F757B0AAFA8D8045390</string>
+			<key>targetProxy</key>
+			<string>E5DED5C5F2FD251D572947156DAF2831</string>
+		</dict>
 		<key>34C5FD4CDCECAB16010FBF785EBBF288</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -167,7 +339,7 @@
 		<key>36516B52F3899263B4DE7B1FE80168BA</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>02C2DC918D2EB99B64EAB849E4B1E533</string>
+			<string>F58297CCC129C38309793275959F8421</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -198,6 +370,33 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>3CFEFE9B81F07EEF314344F5E1EFE787</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A5AC617FD6CAE7BAEA96FEC237A0DC23</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3DFFADF2D4841F05E30CCB33E77AFCDD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B4650E9968FFE9361674D0110FFB590D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
 		<key>3EE3909E43BB9CBDAD87849880036F31</key>
 		<dict>
 			<key>children</key>
@@ -211,7 +410,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>490222283A9EF243631BFB13BC6D10EC</key>
+		<key>45140123C2E9429DF1048E7B309A1DD7</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>archive.ar</string>
@@ -220,11 +419,18 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>libMTBBarcodeScanner.a</string>
+			<string>libSVProgressHUD.a</string>
 			<key>path</key>
-			<string>libMTBBarcodeScanner.a</string>
+			<string>libSVProgressHUD.a</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>475B1A27E204BBA26CE8AC3BCAA531F1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C9AF9FC16A5F17130E3F262844419813</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>4F8D30AA4C5FB6979CD02CD5070A5AF3</key>
 		<dict>
@@ -260,20 +466,87 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5BCBA673CF0E19320E7B612DC8B709F5</key>
+		<key>5FC432735C129C79A8DE4127E78B65C9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>760478A35E23A3882698D8E9DF3CC161</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6060F300C2797A42C7587C44828C2A86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SVProgressAnimatedView.h</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVProgressAnimatedView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>619EC974538EE7731BA089F134FA93EF</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>AF592FBD16D696EFDCB773B3082A0AFA</string>
+				<string>18FA9D4A6147C06CA9C1D92157CC22B4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6DDFC49271F8E5B91CEF14C8CF0B85A1</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>0F6297B05692A16A70987B1F6548554D</string>
+				<string>1F4D4A2E1BC7836B10F43C828BB5060F</string>
+				<string>121AAFBFAEB98249680F97A7719AE947</string>
+				<string>3CFEFE9B81F07EEF314344F5E1EFE787</string>
+				<string>5FC432735C129C79A8DE4127E78B65C9</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
+			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>641F3E7A6A6F410347081FAD20ED1FE4</key>
+		<key>6F42D48A2785CCE50440A61E70879A99</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>475B1A27E204BBA26CE8AC3BCAA531F1</string>
+				<string>E50C3E992C92E3C2E12197DA6552FC19</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6F43F74BFD0C5DA678F1F853F47FF748</key>
+		<dict>
+			<key>fileRef</key>
+			<string>73BF4E79D08E0B353D23B97D75E3D9A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>73BF4E79D08E0B353D23B97D75E3D9A1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -281,34 +554,50 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>MTBBarcodeScanner.m</string>
 			<key>path</key>
-			<string>Classes/ios/Scanners/MTBBarcodeScanner.m</string>
+			<string>MTBBarcodeScanner-dummy.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6F43F74BFD0C5DA678F1F853F47FF748</key>
+		<key>760478A35E23A3882698D8E9DF3CC161</key>
 		<dict>
-			<key>fileRef</key>
-			<string>9F68678A666F305061EF2550A91B19B1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7A667BB9B8DEA1FF0B45698AAE726FF7</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>libPods-BarcodeDemo.a</string>
+			<string>SVRadialGradientLayer.h</string>
 			<key>path</key>
-			<string>libPods-BarcodeDemo.a</string>
+			<string>SVProgressHUD/SVRadialGradientLayer.h</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76E26986DB6C6F757B0AAFA8D8045390</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>1C0A8ACB0F0AF54B49BD0FB59FC88A08</string>
+			<key>buildPhases</key>
+			<array>
+				<string>2B12F1531EF8FDEEF76A84A478AC43E2</string>
+				<string>6F42D48A2785CCE50440A61E70879A99</string>
+				<string>6DDFC49271F8E5B91CEF14C8CF0B85A1</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SVProgressHUD</string>
+			<key>productName</key>
+			<string>SVProgressHUD</string>
+			<key>productReference</key>
+			<string>45140123C2E9429DF1048E7B309A1DD7</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
 		</dict>
 		<key>7B2920A13F19BF04ADA438205278D32F</key>
 		<dict>
@@ -323,12 +612,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7D82F146C5712C22DDAD701BB4C70249</key>
+		<key>7C70E9F62E06B75CC51821D3A1D56331</key>
 		<dict>
-			<key>fileRef</key>
-			<string>C9AF9FC16A5F17130E3F262844419813</string>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libMTBBarcodeScanner.a</string>
+			<key>path</key>
+			<string>libMTBBarcodeScanner.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
@@ -336,8 +633,8 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>122DA2E5084A4393C29BE363C764795C</string>
-				<string>8301CCD6A4534049D3405197EC7D3A7F</string>
-				<string>C6BC69DF6BE9731E18844338F04396CA</string>
+				<string>C5886471ECCE44690FD15E9CB00F7B6C</string>
+				<string>2EAD14EF2017FF50C094BD6A3EF2417F</string>
 				<string>3EE3909E43BB9CBDAD87849880036F31</string>
 			</array>
 			<key>isa</key>
@@ -345,29 +642,18 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8301CCD6A4534049D3405197EC7D3A7F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DCFABEDB271B967CC605F159A1CD9845</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8516D3F98F720998CA20621796BFB983</key>
+		<key>84E4468846D739AF1C998F53DA7622CD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SVProgressHUD.m</string>
 			<key>path</key>
-			<string>MTBBarcodeScanner-prefix.pch</string>
+			<string>SVProgressHUD/SVProgressHUD.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -387,37 +673,18 @@
 		<key>8FF82D1FDACA9B6024F278AAF4FE1379</key>
 		<dict>
 			<key>fileRef</key>
-			<string>641F3E7A6A6F410347081FAD20ED1FE4</string>
+			<string>954CAE6DA794C4B5B2DBA01314346732</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>99362677D16B2C339FA87DD37746D18F</key>
+		<key>90D9ED21EA4774A3D2201E6DCFE4603A</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>BE082A3B13558C79FBD623D55E8C9D1B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>5BCBA673CF0E19320E7B612DC8B709F5</string>
-				<string>DB904D6C79C77D60225DA483D49D533F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>1F8588E6BE33C3552407DE94DAEDD0A0</string>
-			</array>
+			<key>fileRef</key>
+			<string>C9AF9FC16A5F17130E3F262844419813</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-BarcodeDemo</string>
-			<key>productName</key>
-			<string>Pods-BarcodeDemo</string>
-			<key>productReference</key>
-			<string>7A667BB9B8DEA1FF0B45698AAE726FF7</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>9F68678A666F305061EF2550A91B19B1</key>
+		<key>954CAE6DA794C4B5B2DBA01314346732</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -425,8 +692,62 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>MTBBarcodeScanner.m</string>
 			<key>path</key>
-			<string>MTBBarcodeScanner-dummy.m</string>
+			<string>Classes/ios/Scanners/MTBBarcodeScanner.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9751B7752AB99A1D0C4906C5113533D5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>2BDDD4243DE0CDA9E7024462D9982802</string>
+				<string>169119F62BEA7C48A576A7E8F2EB00EC</string>
+				<string>CAE1454DE76B6670225C6CF9B66F955A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SVProgressHUD</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A24BB83A6D79AEF4E93CDE51E55E0834</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1342B94457F64FADB9A2C5F0E6CAD7A3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A40C16FFE28AB22AB4190AA1B534E889</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E3AE1165665F5D728A94A1DFE0E6A5EB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A5AC617FD6CAE7BAEA96FEC237A0DC23</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>SVProgressHUD.h</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVProgressHUD.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -510,6 +831,87 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>ACF1EF75A80871E1ED6926D53AC0885D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SVProgressAnimatedView.m</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVProgressAnimatedView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD58A6DDE690DDA11FF0C14AD3E690DC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>169119F62BEA7C48A576A7E8F2EB00EC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>AE8F5B7C715A68C9CBEE9B6152F5AA98</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>619EC974538EE7731BA089F134FA93EF</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3DFFADF2D4841F05E30CCB33E77AFCDD</string>
+				<string>D993CD567CBF499E5859CACDFE11A826</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B7232946B14A59E6F48F2484A78028CF</string>
+				<string>2F62E15B77C5225DD905104AF5D908DD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-BarcodeDemo</string>
+			<key>productName</key>
+			<string>Pods-BarcodeDemo</string>
+			<key>productReference</key>
+			<string>D08F647D5D7B0E406D8DE4F502FCD2CA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>AF592FBD16D696EFDCB773B3082A0AFA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>19CC021FE4F578FC2623944FE2D7CB89</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
 		<key>B32FB113AFA50F112AD3D369BB4BBA44</key>
 		<dict>
 			<key>fileRef</key>
@@ -531,6 +933,39 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>B4650E9968FFE9361674D0110FFB590D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7B2920A13F19BF04ADA438205278D32F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B7232946B14A59E6F48F2484A78028CF</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>MTBBarcodeScanner</string>
+			<key>target</key>
+			<string>ED20C28FE5CB0C4E3BC2174894B2EB74</string>
+			<key>targetProxy</key>
+			<string>DDD63F7DE432896676C16E4C0404C2AC</string>
+		</dict>
+		<key>B815966CC49FBF1FA2A6499CBB8678A9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SVRadialGradientLayer.m</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVRadialGradientLayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -548,50 +983,50 @@
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
 		</dict>
-		<key>BE082A3B13558C79FBD623D55E8C9D1B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>ED32B6CB265815A20F4C2C1CEF29751F</string>
-				<string>F0D64901CA2E95E5D10EC56A04BAA907</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C6BC69DF6BE9731E18844338F04396CA</key>
+		<key>BC2C99799F96A54515CD4FCF94150048</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>490222283A9EF243631BFB13BC6D10EC</string>
-				<string>7A667BB9B8DEA1FF0B45698AAE726FF7</string>
+				<string>011E7FCA4384D62245028183136B63B4</string>
+				<string>E3AE1165665F5D728A94A1DFE0E6A5EB</string>
+				<string>6060F300C2797A42C7587C44828C2A86</string>
+				<string>ACF1EF75A80871E1ED6926D53AC0885D</string>
+				<string>A5AC617FD6CAE7BAEA96FEC237A0DC23</string>
+				<string>84E4468846D739AF1C998F53DA7622CD</string>
+				<string>760478A35E23A3882698D8E9DF3CC161</string>
+				<string>B815966CC49FBF1FA2A6499CBB8678A9</string>
+				<string>A24BB83A6D79AEF4E93CDE51E55E0834</string>
+				<string>9751B7752AB99A1D0C4906C5113533D5</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C8A6F3D7A6D0C51EC987B99FCC9EEB14</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>02C2DC918D2EB99B64EAB849E4B1E533</string>
-				<string>9F68678A666F305061EF2550A91B19B1</string>
-				<string>8516D3F98F720998CA20621796BFB983</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
+			<string>SVProgressHUD</string>
 			<key>path</key>
-			<string>../Target Support Files/MTBBarcodeScanner</string>
+			<string>SVProgressHUD</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5886471ECCE44690FD15E9CB00F7B6C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>19D4B573DD515D251F3E4773DCE35E63</string>
+				<string>BC2C99799F96A54515CD4FCF94150048</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C5D36AB3B31495DE503FAC59CAF0A219</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B815966CC49FBF1FA2A6499CBB8678A9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>C9AF9FC16A5F17130E3F262844419813</key>
 		<dict>
@@ -605,6 +1040,62 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>CA85C5E12710F3D4B0260892F7A257C5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MTBBarcodeScanner-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAE1454DE76B6670225C6CF9B66F955A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SVProgressHUD-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D08F647D5D7B0E406D8DE4F502FCD2CA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods-BarcodeDemo.a</string>
+			<key>path</key>
+			<string>libPods-BarcodeDemo.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D2232C0AA0DB657F6420E029A9AC5E86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MTBBarcodeScanner.h</string>
+			<key>path</key>
+			<string>Classes/ios/Scanners/MTBBarcodeScanner.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>D41D8CD98F00B204E9800998ECF8427E</key>
 		<dict>
@@ -632,7 +1123,7 @@
 			<key>mainGroup</key>
 			<string>7DB346D0F39D3F0E887471402A8071AB</string>
 			<key>productRefGroup</key>
-			<string>C6BC69DF6BE9731E18844338F04396CA</string>
+			<string>2EAD14EF2017FF50C094BD6A3EF2417F</string>
 			<key>projectDirPath</key>
 			<string></string>
 			<key>projectReferences</key>
@@ -642,13 +1133,14 @@
 			<key>targets</key>
 			<array>
 				<string>ED20C28FE5CB0C4E3BC2174894B2EB74</string>
-				<string>99362677D16B2C339FA87DD37746D18F</string>
+				<string>AE8F5B7C715A68C9CBEE9B6152F5AA98</string>
+				<string>76E26986DB6C6F757B0AAFA8D8045390</string>
 			</array>
 		</dict>
 		<key>D47B8481EE1D219B7B2775B493EF60EE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>02C2DC918D2EB99B64EAB849E4B1E533</string>
+			<string>F58297CCC129C38309793275959F8421</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
@@ -679,35 +1171,18 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>DB904D6C79C77D60225DA483D49D533F</key>
+		<key>D993CD567CBF499E5859CACDFE11A826</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>7D82F146C5712C22DDAD701BB4C70249</string>
+				<string>90D9ED21EA4774A3D2201E6DCFE4603A</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
-		</dict>
-		<key>DCFABEDB271B967CC605F159A1CD9845</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1BF0AE058CB5233F805D435B73C85C33</string>
-				<string>641F3E7A6A6F410347081FAD20ED1FE4</string>
-				<string>C8A6F3D7A6D0C51EC987B99FCC9EEB14</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>MTBBarcodeScanner</string>
-			<key>path</key>
-			<string>MTBBarcodeScanner</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>DD98AD0B9F999D2E6854597D9E513C50</key>
 		<dict>
@@ -721,6 +1196,54 @@
 			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework</string>
 			<key>sourceTree</key>
 			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>DDD63F7DE432896676C16E4C0404C2AC</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>ED20C28FE5CB0C4E3BC2174894B2EB74</string>
+			<key>remoteInfo</key>
+			<string>MTBBarcodeScanner</string>
+		</dict>
+		<key>E3AE1165665F5D728A94A1DFE0E6A5EB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>SVIndefiniteAnimatedView.m</string>
+			<key>path</key>
+			<string>SVProgressHUD/SVIndefiniteAnimatedView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E50C3E992C92E3C2E12197DA6552FC19</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DD98AD0B9F999D2E6854597D9E513C50</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E5DED5C5F2FD251D572947156DAF2831</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>76E26986DB6C6F757B0AAFA8D8045390</string>
+			<key>remoteInfo</key>
+			<string>SVProgressHUD</string>
 		</dict>
 		<key>E822DC63C2EDA1E22DD4496202D359FB</key>
 		<dict>
@@ -736,6 +1259,13 @@
 			<string>iOS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E89BDA02267D41A31CA3133D6636FA6A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ACF1EF75A80871E1ED6926D53AC0885D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>E9409BFB26E6AFF5DCAE04D547FD8F5D</key>
 		<dict>
@@ -771,6 +1301,40 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
+		<key>EC728BB2D9BE5157F758EECF76B6A6FC</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>2BDDD4243DE0CDA9E7024462D9982802</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PRIVATE_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PUBLIC_HEADERS_FOLDER_PATH</key>
+				<string></string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
 		<key>ED20C28FE5CB0C4E3BC2174894B2EB74</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -792,73 +1356,22 @@
 			<key>productName</key>
 			<string>MTBBarcodeScanner</string>
 			<key>productReference</key>
-			<string>490222283A9EF243631BFB13BC6D10EC</string>
+			<string>7C70E9F62E06B75CC51821D3A1D56331</string>
 			<key>productType</key>
 			<string>com.apple.product-type.library.static</string>
 		</dict>
-		<key>ED32B6CB265815A20F4C2C1CEF29751F</key>
+		<key>F58297CCC129C38309793275959F8421</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>19CC021FE4F578FC2623944FE2D7CB89</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>F0D64901CA2E95E5D10EC56A04BAA907</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>34C5FD4CDCECAB16010FBF785EBBF288</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>MTBBarcodeScanner.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F64E9E9BF33AE59F1FE7E0E62D9C402F</key>
 		<dict>
@@ -870,6 +1383,23 @@
 			<string>text</string>
 			<key>path</key>
 			<string>Pods-BarcodeDemo-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F97017F557D6F7CA746D0CC352FE0D5E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F58297CCC129C38309793275959F8421</string>
+				<string>73BF4E79D08E0B353D23B97D75E3D9A1</string>
+				<string>CA85C5E12710F3D4B0260892F7A257C5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/MTBBarcodeScanner</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

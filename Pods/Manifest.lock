@@ -1,10 +1,13 @@
 PODS:
   - MTBBarcodeScanner (1.9.1)
+  - SVProgressHUD (2.0.2)
 
 DEPENDENCIES:
   - MTBBarcodeScanner (~> 1.9.1)
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   MTBBarcodeScanner: d65037ab37f0932b46e11a51e98978593424d64e
+  SVProgressHUD: e4020e23badbd7cc61bc4a80d3c1da57f166a978
 
 COCOAPODS: 0.39.0

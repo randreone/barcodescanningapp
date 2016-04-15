@@ -10,7 +10,7 @@
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
-			<string>Launch URL</string>
+			<string>Default Launch URL</string>
 			<key>Key</key>
 			<string>scan_url</string>
 			<key>DefaultValue</key>
@@ -23,6 +23,16 @@
 			<string>None</string>
 			<key>AutocorrectionType</key>
 			<string>No</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSToggleSwitchSpecifier</string>
+			<key>Title</key>
+			<string>Allow Link-Configured Launch URL</string>
+			<key>Key</key>
+			<string>allow_link_configured_url</string>
+			<key>DefaultValue</key>
+			<true/>
 		</dict>
 	</array>
 </dict>

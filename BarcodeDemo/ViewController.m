@@ -8,10 +8,10 @@
 
 #import "ViewController.h"
 #import "BarcodeScannerView.h"
+#import "Common.h"
 #import <MTBBarcodeScanner.h>
 
-#define kDefaultURL @"http://ffdemo.formfast.com/WebFormImprint/WebAnnotationClient/index.htm?ffservice=http://ffdemo.formfast.com/WebFormImprint/FFWebService&filter_PersonId=236405&filter_RecordId=01909978&user=nurse&psw=nurse&DisplayPrintButton=False&ShowClearAndDeleteButtonsInMobile=True"
-#define kLaunchURLKey @"scan_url"
+
 #define kScanDelay 1.5
 
 @interface ViewController () {
@@ -47,17 +47,35 @@
     [self.view setNeedsLayout];
     
     [self registerDefaultsFromSettingsBundle];
-    _launchURL = [[NSUserDefaults standardUserDefaults] objectForKey:kLaunchURLKey];
+    
+    BOOL allowEmailConfigured = [[NSUserDefaults standardUserDefaults] boolForKey:kAllowConfiguredURLKey];
+    if (allowEmailConfigured) {
+        _launchURL = [[NSUserDefaults standardUserDefaults] objectForKey:kConfiguredURLKey];
+    }
+    
     if (_launchURL == nil || _launchURL.length == 0) {
-        _launchURL = kDefaultURL;
+        _launchURL = [[NSUserDefaults standardUserDefaults] objectForKey:kLaunchURLKey];
+        if (_launchURL == nil || _launchURL.length == 0) {
+            _launchURL = kDefaultURL;
+        }
     }
 
-//    
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(launchURLChanged:) name:kNotificationLaunchURLChanged object:nil];
+//
 //    _logoImageView.userInteractionEnabled = YES;
 //    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(logoTapped:)];
 //    [_logoImageView addGestureRecognizer:tapGesture];
     
 }
+
+- (void)launchURLChanged:(NSNotification *)info {
+    NSString *url = info.userInfo[kNotificationLaunchURLKey];
+
+    _launchURL = url;
+
+}
+
 
 - (void)viewDidAppear:(BOOL)animated {
     

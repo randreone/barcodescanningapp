@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Common.h"
+#import <SVProgressHUD.h>
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 
@@ -48,6 +50,28 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {    // handler code here
+    
+    NSString *newURL = [[url absoluteString] stringByReplacingOccurrencesOfString:@"formfast://" withString:@"https://"];
+    
+    if (newURL != nil) {
+        [[NSUserDefaults standardUserDefaults] setObject:newURL forKey:kConfiguredURLKey];
+        
+        BOOL allowEmailConfig = [[NSUserDefaults standardUserDefaults] boolForKey:kAllowConfiguredURLKey];
+        
+        if (allowEmailConfig) {
+            [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"Configured Launch URL: %@", newURL]];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationLaunchURLChanged object:nil userInfo:@{kNotificationLaunchURLKey: newURL}];
+            
+        } else {
+            [SVProgressHUD showErrorWithStatus:@"Set new launch URL, but configured launch URLs are disabled in app settings"];             
+        }
+    }
+    
+    return YES;
 }
 
 @end
